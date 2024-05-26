@@ -7,41 +7,36 @@ const OlioBlogv11Frame = () => {
   return (
     <div className="relative bg-white-white w-full overflow-hidden flex flex-row items-start justify-start py-0 pr-0 pl-[22px] box-border leading-[normal] tracking-[normal]">
       <div className="w-[1418px] flex flex-col items-start justify-start py-0 px-0 box-border relative max-w-full">
-        <main className="self-stretch bg-white-white overflow-hidden flex flex-col items-center justify-start pt-[120px] px-5 pb-[476px] box-border gap-[50px] max-w-[102%] shrink-0 text-left text-[36px] text-dark-dark font-body-small-regular lg:pt-[78px] lg:pb-[309px] lg:box-border mq750:gap-[25px] mq750:pt-[33px] mq750:pb-[131px] mq750:box-border mq1050:pt-[51px] mq1050:pb-[201px] mq1050:box-border">
+        <main className="self-stretch bg-white-white overflow-hidden flex flex-col items-center justify-start pt-[120px] px-5 pb-[476px] box-border gap-[50px] max-w-[102%] shrink-0 text-left text-[36px] text-dark-dark font-body-small-regular lg:pt-[78px] lg:pb-[309px] lg:box-border mq750:gap-[25px] mq750:pt-[33px] mq750:pb-[131px] mq750:box-border mq1200:pt-[51px] mq1200:pb-[201px] mq1200:box-border">
           <FrameComponent2 />
-          <section className="w-[1170px] flex flex-row items-start justify-start gap-[55px] max-w-full text-left text-[35px] text-primary-text-color font-body-small-regular mq750:gap-[27px] mq1050:flex-wrap">
+          <section className="w-[1170px] flex flex-row items-start justify-start gap-[55px] max-w-full text-left text-[35px] text-primary-text-color font-body-small-regular mq750:gap-[27px] mq1200:flex-wrap">
             <div className="flex-1 flex flex-col items-start justify-start gap-[40px] max-w-full mq750:gap-[20px] mq750:min-w-full">
               <div className="self-stretch flex flex-col items-start justify-start gap-[40px] max-w-full mq750:gap-[20px]">
                 <div className="self-stretch flex flex-col items-start justify-start gap-[30px] max-w-full text-dark-dark">
                   <div className="self-stretch flex flex-col items-start justify-start gap-[30px]">
-                    <h1 className="m-0 self-stretch relative text-inherit leading-[45px] font-bold font-inherit mq450:text-[21px] mq450:leading-[27px] mq1050:text-9xl mq1050:leading-[36px]">
+                    <h1 className="m-0 self-stretch relative text-inherit leading-[45px] font-bold font-inherit mq450:text-[21px] mq450:leading-[27px] mq1200:text-9xl mq1200:leading-[36px]">
                       Celebrating Laurie Waller’s AWS Developer Associate
                       Certification
                     </h1>
                     <div className="self-stretch flex flex-col items-start justify-start gap-[25px] text-base text-primary-text-color">
-                      <p className="m-0 self-stretch h-36 relative leading-[24px] inline-block">
                         <span className="block">
                           At Olio Apps we acknowledge that Amazon Web Services
                           (AWS) is an industry leader when it comes to providing
                           reliable and scalable cloud services for companies
                           across all domains.  
                         </span>
-                        <span className="block">
+
                           Knowing this, we make it our mission to support our
                           team members in growing their knowledge base and
                           expertise regarding the suite of AWS services and use
                           cases so we can suggest the best practices and
                           architectures when it comes to solving client
                           problems. 
-                        </span>
-                      </p>
-                      <p className="m-0 self-stretch h-48 relative leading-[24px] inline-block">
-                        <span className="block">
+                          
                           This is why we are excited to announce and celebrate
                           Laurie Waller’s recent AWS Developer Associate
                           Certification.
-                        </span>
-                        <span className="block">&nbsp;</span>
+
                         <span className="block">
                           The AWS Developer Associate certification validates
                           expertise in developing cloud-based applications on
@@ -50,7 +45,6 @@ const OlioBlogv11Frame = () => {
                           Certification can be assured they are up to date with
                           Amazon’s best practices and innovation standards.
                         </span>
-                      </p>
                     </div>
                   </div>
                   <div className="self-stretch flex flex-col items-start justify-start gap-[25px] max-w-full text-9xl">
@@ -102,11 +96,8 @@ const OlioBlogv11Frame = () => {
                     top-notch results...
                   </i>
                 </div>
-                <div className="self-stretch flex flex-row items-start justify-start gap-[25px] max-w-full text-base">
-                  <div className="w-[233px] relative text-9xl leading-[40px] font-semibold text-dark-dark hidden mq450:text-3xl mq450:leading-[32px]">
-                    3rd Sub Headline
-                  </div>
-                  <p className="m-0 h-36 flex-1 relative leading-[24px] inline-block max-w-full">
+                <div className="max-w-full text-base">
+                  <p className="m-0 h-36 flex-1  relative inline-block max-w-full">
                     <span className="block">
                       {`Laurie is a Fullstack Engineer at Olio Apps and a self described lifelong learner. You can learn more about the team at Olio Apps `}
                       <a
@@ -127,13 +118,7 @@ const OlioBlogv11Frame = () => {
                       Associate Certification.
                     </span>
                   </p>
-                  <div className="h-[72px] w-[745px] relative leading-[24px] hidden shrink-0 max-w-full">
-                    At quo cetero fastidii. Usu ex ornatus corpora sententiae,
-                    vocibus deleniti ut nec. Ut enim eripuit eligendi est, in
-                    iracundia signiferumque quo. Sed virtute suavitate
-                    suscipiantur ea, dolor this can eloquentiam ei pro. Suas
-                    adversarium interpretaris eu sit, eum viris impedit ne.
-                  </div>
+                  <TeamGrid />
                 </div>
               </div>
               <div className="self-stretch flex flex-row items-end justify-between max-w-full gap-[20px] text-base text-dark-dark mq750:flex-wrap">
@@ -144,7 +129,7 @@ const OlioBlogv11Frame = () => {
                     </div>
                   </button>
                   <div className="flex-1 rounded-md bg-royalblue-400 flex flex-row items-center justify-start py-[5px] px-3.5 box-border min-w-[83px]">
-                    <div className="relative leading-[24px] inline-block min-w-[100px]">
+                    <div className=" relative inline-block min-w-[100px]">
                       Development
                     </div>
                   </div>
@@ -178,103 +163,17 @@ const OlioBlogv11Frame = () => {
                       src="/145807.svg"
                     />
                   </div>
+
                 </div>
+                
               </div>
             </div>
             <FrameComponent />
           </section>
-          <div className="w-[1170px] hidden flex-col items-start justify-start gap-[40px] max-w-full">
-            <div className="w-[277px] flex flex-col items-start justify-start gap-[20px]">
-              <div className="self-stretch h-11 relative font-semibold inline-block mq450:text-3xl mq1050:text-[29px]">
-                Related Articles
-              </div>
-              <img className="w-20 h-px relative" alt="" />
-            </div>
-            <div className="self-stretch flex flex-row items-start justify-start gap-[30px] max-w-full text-xs text-white-white">
-              <div className="hidden flex-col items-start justify-start gap-[30px] max-w-full">
-                <img
-                  className="w-[370px] relative rounded-8xs max-h-full object-cover max-w-full"
-                  alt=""
-                  src="/blog-image@2x.png"
-                />
-                <div className="w-[370px] flex flex-col items-start justify-start gap-[25px] max-w-full">
-                  <div className="w-[108px] rounded-8xs bg-primary-color overflow-hidden flex flex-row items-center justify-center py-1 px-[15px] box-border whitespace-nowrap">
-                    <div className="h-5 flex-1 relative leading-[20px] font-medium inline-block">
-                      Dec 22, 2023
-                    </div>
-                  </div>
-                  <div className="self-stretch flex flex-col items-start justify-start gap-[15px] text-5xl text-dark-dark">
-                    <div className="self-stretch h-[60px] relative leading-[30px] font-semibold inline-block mq450:text-lgi mq450:leading-[24px]">
-                      Meet AutoManage, the best AI management tools
-                    </div>
-                    <div className="self-stretch h-12 relative text-base leading-[24px] text-primary-text-color inline-block">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="hidden flex-col items-start justify-start gap-[30px] max-w-full">
-                <img
-                  className="w-[370px] relative rounded-8xs max-h-full object-cover max-w-full"
-                  alt=""
-                  src="/blog-image-1@2x.png"
-                />
-                <div className="w-[370px] flex flex-col items-start justify-start gap-[25px] max-w-full">
-                  <div className="w-[105px] rounded-8xs bg-primary-color overflow-hidden flex flex-row items-center justify-center py-1 px-[15px] box-border whitespace-nowrap">
-                    <div className="h-5 flex-1 relative leading-[20px] font-medium inline-block">
-                      Mar 15, 2023
-                    </div>
-                  </div>
-                  <div className="self-stretch flex flex-col items-start justify-start gap-[15px] text-5xl text-dark-dark">
-                    <div className="self-stretch h-[60px] relative leading-[30px] font-semibold inline-block mq450:text-lgi mq450:leading-[24px]">
-                      How to earn more money as a wellness coach
-                    </div>
-                    <div className="self-stretch h-12 relative text-base leading-[24px] text-primary-text-color inline-block">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="hidden flex-col items-start justify-start gap-[30px] max-w-full">
-                <img
-                  className="w-[370px] relative rounded-8xs max-h-full object-cover max-w-full"
-                  alt=""
-                  src="/blog-image-2@2x.png"
-                />
-                <div className="w-[370px] flex flex-col items-start justify-start gap-[25px] max-w-full">
-                  <div className="w-[106px] rounded-8xs bg-primary-color overflow-hidden flex flex-row items-center justify-center py-1 px-[15px] box-border whitespace-nowrap">
-                    <div className="h-5 flex-1 relative leading-[20px] font-medium inline-block">
-                      Jan 05, 2023
-                    </div>
-                  </div>
-                  <div className="self-stretch flex flex-col items-start justify-start gap-[15px] text-5xl text-dark-dark">
-                    <div className="self-stretch h-[60px] relative leading-[30px] font-semibold inline-block mq450:text-lgi mq450:leading-[24px]">
-                      The no-fuss guide to upselling and cross selling
-                    </div>
-                    <div className="self-stretch h-12 relative text-base leading-[24px] text-primary-text-color inline-block">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                 
+ 
         </main>
-        <TeamGrid />
-        <img
-          className="w-[328px] h-[281px] absolute !m-[0] right-[135px] bottom-[443px] object-contain z-[3]"
-          loading="lazy"
-          alt=""
-          src="/global-award-badge-1@2x.png"
-        />
-        <img
-          className="w-[1304px] h-[74px] absolute !m-[0] top-[9px] right-[31px] object-cover z-[3]"
-          alt=""
-          src="/image-3@2x.png"
-        />
+
       </div>
     </div>
   );

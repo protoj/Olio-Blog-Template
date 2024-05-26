@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const FrameComponent = ({ className = "" }) => {
   return (
     <div
-      className={`w-[370px] flex flex-col items-start justify-start gap-[40px] min-w-[370px] max-w-full text-center text-9xl text-white-white font-body-small-regular mq750:min-w-full mq450:gap-[20px] mq1050:flex-1 ${className}`}
+      className={`w-[370px] flex flex-col items-start justify-start gap-[40px] min-w-[370px] max-w-full text-center text-9xl text-white-white font-body-small-regular mq750:min-w-full mq450:gap-[20px] mq1200:flex-1 ${className}`}
     >
       <div className="self-stretch flex flex-row items-start justify-start pt-[65px] px-[45px] pb-[63px] relative mq450:pt-[42px] mq450:px-5 mq450:pb-[41px] mq450:box-border">
         <img
@@ -27,11 +27,7 @@ const FrameComponent = ({ className = "" }) => {
             <div className="self-stretch flex flex-col items-start justify-start gap-[15px]">
               <div className="self-stretch flex flex-col items-start justify-start">
                 <div className="self-stretch flex flex-col items-start justify-start">
-                  <div className="shadow-[0px_4px_42px_rgba(0,_0,_0,_0.01)] rounded-8xs bg-gray-300 flex flex-row items-center justify-center py-2.5 pr-[15px] pl-[19px] gap-[10px] border-[1px] border-solid border-gray-200">
-                    <img
-                      className="h-4 w-4 relative overflow-hidden shrink-0 hidden"
-                      alt=""
-                    />
+                  <div className="shadow-[0px_4px_42px_rgba(0,_0,_0,_0.01)] rounded-8xs bg-gray-300 flex flex-row items-center justify-center py-2.5 pr-[15px] pl-[19px] gap-[10px] border-[1px] border-solid border-gray-200" style={{display: "block",margin:"auto"}}>
                     <div className="flex flex-row items-center justify-center py-0 px-[50px]">
                       <div className="relative leading-[24px]">
                         Your email address
@@ -40,7 +36,7 @@ const FrameComponent = ({ className = "" }) => {
                   </div>
                 </div>
               </div>
-              <button className="cursor-pointer py-[11px] px-5 bg-secondary-color self-stretch rounded-md flex flex-row items-center justify-center whitespace-nowrap border-[1px] border-solid border-secondary-color hover:bg-mediumseagreen hover:box-border hover:border-[1px] hover:border-solid hover:border-mediumseagreen">
+              <button className="cursor-pointer py-[11px] px-5 bg-secondary-color rounded-md flex flex-row items-center justify-center whitespace-nowrap border-[1px] border-solid border-secondary-color hover:bg-mediumseagreen hover:box-border hover:border-[1px] hover:border-solid hover:border-mediumseagreen" style={{display: "block",margin:"auto"}}>
                 <div className="relative text-base leading-[24px] font-medium font-body-small-regular text-white-white text-center inline-block min-w-[116px]">
                   Subscribe Now
                 </div>
@@ -123,19 +119,17 @@ const FrameComponent = ({ className = "" }) => {
             propColor="#111928"
             propHeight1="48px"
           />
-        </div>
-      </div>
-      <div className="self-stretch h-[230px] relative hidden text-5xl">
-        <img
-          className="absolute top-[0px] left-[0px] rounded-8xs w-full h-full object-cover"
+      <img
+          className="w-[328px] h-[281px] object-contain z-[3]"
+          loading="lazy"
           alt=""
-          src="/rectangle-4392@2x.png"
+          src="/global-award-badge-1@2x.png"
         />
-        <div className="absolute top-[100px] left-[29px] leading-[30px] font-semibold mq450:text-lgi mq450:leading-[24px]">
-          Banner Ad For Olio Service
         </div>
       </div>
-    </div>
+    
+
+      </div>
   );
 };
 
